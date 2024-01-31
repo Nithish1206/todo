@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  position: sticky;
+  top:0px;
+  padding: 10px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.inputForm{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.inputBox{
+  font-size: 1.6rem; 
+  padding:5px 5px 5px 10px;
+  width: 40%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.addbtn{
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    margin-left: 20px;
+    color: rgb(202, 0, 152);
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.addbtn:hover{
+  color:rgb(2, 207, 2);
+}
+
+.content {
+  display: flex;
+  max-width: 100vw;
+  justify-content: center;
+  margin-bottom:20px ;
+  overflow-y: auto;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 10px;
+  width: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 80px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  list-style-type: none;
+  align-items: center;
+  padding: 20px;
+  word-break: break-word;
+}
+
+.checkb {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.deletebtn {
+  margin: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.deletebtn:hover {
+  color: red;
+}
+
+.ifEmpty{
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+.deleteAll{
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+  margin-left: 80px;
+}
+
+.inputForm label{
+  display: none;
+}
